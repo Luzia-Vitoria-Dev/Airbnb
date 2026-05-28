@@ -1,11 +1,12 @@
-import { IconSearch } from "@tabler/icons-react"
+import { IconSearch } from "@/assets/icons"
 
 const SearchBar = () => {
     return (
         <>
-            <div className="border border-gray-200 shadow-lg shadow-gray-200
+            <div className="border border-gray-200 
                 flex items-center rounded-full overflow-clip
                 px-3 py-2 w-full max-w-2xl mx-auto
+                shadow-lg shadow-gray-200
                 ">
                 <input className="w-full focus:outline-none px-3" 
                 type="text" placeholder="Digite sua pesquisa" />
