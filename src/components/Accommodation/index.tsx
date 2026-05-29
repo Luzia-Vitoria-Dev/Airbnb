@@ -18,7 +18,11 @@ const Accommodation = ( {
             <figure className="relative">
 
                 <div className="p-2 absolute w-full flex flex-row justify-between items-center">
-                    <span className="bg-white rounded-full px-4 py-1 font-semibold">Preferido dos hóspedes</span>
+                    <div>
+                        {hasBadge && (
+                            <span className="bg-white rounded-full px-4 py-1 font-semibold">Preferido dos hóspedes</span>
+                        )}
+                    </div>
                     <IconHeartFilled className="stroke-white opacity-80"
                     aria-label="Favorites"
                     size={30}
