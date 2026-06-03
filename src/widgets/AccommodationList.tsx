@@ -2279,6 +2279,7 @@ const AccommodationList = () => {
                             alt={accommodation.photos[0].description}
                             width={300}
                             height={300}
+                            priority
                             />
                         </Accommodation>
                     </div>

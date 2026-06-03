@@ -1,4 +1,5 @@
 import AccommodationList from "@/widgets/AccommodationList";
+import Footer from "@/widgets/Footer";
 import HorizontalFilterNavigation from "@/widgets/HorizontalFilterNavigation";
 import SearchBar from "@/widgets/SearchBar";
 import TopBar from "@/widgets/TopBar";
@@ -11,15 +12,15 @@ export default function Home() {
         <SearchBar/>
       </header>
 
-      <hr className="my-3"/>
+      <hr className="my-6"/>
 
       <main className="container mx-auto">
         <HorizontalFilterNavigation/>
         <AccommodationList/>
       </main>
 
-      <footer className="container mx-auto">
-        Rodapé
+      <footer className="bg-gray-200">
+        <Footer/>
       </footer>
     </>
   );
