@@ -1,12 +1,12 @@
 import ButtonIcon from "@/components/ButtonIcon"
 import Logo from "@/components/Logo"
-import { IconUserCircle } from "@tabler/icons-react"
+import { IconUserCircle } from "@/assets/icons"
 import Link from "next/link"
 
 const TopBar = () => {
     return (
         <>
-            <div className="container py-6 mx-auto flex justify-between items-center">
+            <div className="py-6 flex justify-between items-center">
 
                 <Logo/>                
 
