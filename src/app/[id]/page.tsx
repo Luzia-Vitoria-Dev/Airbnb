@@ -1,4 +1,5 @@
 import Footer from "@/widgets/Footer"
+import ImageGallery from "@/widgets/ImageGallery"
 import SearchBar from "@/widgets/SearchBar"
 import TopBar from "@/widgets/TopBar"
 
@@ -210,7 +211,8 @@ export default async function Page(
             </header>
 
             <main className="container mx-auto py-6">
-                <h1 className="text-3xl">{accommodation.title}</h1>
+                <h1 className="text-3xl font-semibold">{accommodation.title}</h1>
+                <ImageGallery photos={accommodation.photos}/>
             </main>
 
             <footer className="bg-gray-200">
