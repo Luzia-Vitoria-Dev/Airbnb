@@ -213,7 +213,7 @@ export default async function Page(
             </header>
 
             <main className="container mx-auto py-6">
-                <h1 className="text-3xl font-semibold">{accommodation.title}</h1>
+                <h1 className="text-3xl font-semibold pb-2">{accommodation.title}</h1>
                 <ImageGallery photos={accommodation.photos}/>
                 <div className="flex flex-col md:flex-row">
                   <AccommodationDetails />
