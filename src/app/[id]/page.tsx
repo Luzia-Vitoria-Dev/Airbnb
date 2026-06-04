@@ -1,3 +1,5 @@
+import AccommodationDetails from "@/widgets/AccommodationDetails"
+import AccommodationTestimonials from "@/widgets/AccommodationTestimonials"
 import Footer from "@/widgets/Footer"
 import ImageGallery from "@/widgets/ImageGallery"
 import SearchBar from "@/widgets/SearchBar"
@@ -213,6 +215,10 @@ export default async function Page(
             <main className="container mx-auto py-6">
                 <h1 className="text-3xl font-semibold">{accommodation.title}</h1>
                 <ImageGallery photos={accommodation.photos}/>
+                <div className="flex flex-col md:flex-row">
+                  <AccommodationDetails />
+                  <AccommodationTestimonials />
+                </div>
             </main>
 
             <footer className="bg-gray-200">

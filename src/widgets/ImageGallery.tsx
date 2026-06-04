@@ -14,7 +14,7 @@ const ImageGallery = (
     {photos} : ImageGalleryProps
 ) => {
     return (
-        <div className="grid grid-cols-6 gap-2">
+        <div className="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6">
             {photos.slice(0, 9).map((photo, indice) => {
                 const firstPhoto = indice == 0 ? 'col-span-2 row-span-2' : ''
                 return (
@@ -26,7 +26,7 @@ const ImageGallery = (
                         alt={photo.description}
                         width={1280}
                         height={720}
-                        priority
+                        priority={indice === 0}
                         />
                     </div>
                 )
