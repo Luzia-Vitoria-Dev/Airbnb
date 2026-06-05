@@ -1,4 +1,4 @@
-interface AirbnbApi {
+export interface AirbnbApi {
     accommodation: Accommodation[]
     icons: Icons[]
 }

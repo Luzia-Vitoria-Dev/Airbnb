@@ -1,12 +1,15 @@
+import { fetchData } from "@/utils/api";
 import AccommodationList from "@/widgets/AccommodationList";
 import Footer from "@/widgets/Footer";
 import HorizontalFilterNavigation from "@/widgets/HorizontalFilterNavigation";
 import SearchBar from "@/widgets/SearchBar";
 import TopBar from "@/widgets/TopBar";
 
-export default function Home() {
+export default async function Home() {
+  const data = await fetchData()
   return (
     <>
+    {data.accommodation[0].title}
       <header className="container mx-auto">
         <TopBar/>
         <SearchBar/>
