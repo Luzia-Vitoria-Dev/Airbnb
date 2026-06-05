@@ -42,7 +42,7 @@ const AccommodationDetails = (
                 </li>
                 <li className="flex gap-1.5">
                     <IconBrandCarbon />
-                    <span>Alarme de segurança p/ gás</span>
+                    <span className="line-through">Alarme de segurança p/ gás</span>
                 </li>
                 <li className="flex gap-1.5">
                     <IconSailboat />
@@ -62,7 +62,7 @@ const AccommodationDetails = (
                 </li>
                 <li className="flex gap-1.5">
                     <IconAlarmSmoke />
-                    <span>Detector de fumaça</span>
+                    <span className="line-through">Detector de fumaça</span>
                 </li>
             </ul>
             

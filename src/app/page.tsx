@@ -4,7 +4,6 @@ import Footer from "@/widgets/Footer";
 import HorizontalFilterNavigation from "@/widgets/HorizontalFilterNavigation";
 import SearchBar from "@/widgets/SearchBar";
 import TopBar from "@/widgets/TopBar";
-
 export default async function Home() {
   const data = await fetchData()
   return (
