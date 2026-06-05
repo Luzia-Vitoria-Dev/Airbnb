@@ -1,9 +1,17 @@
 import { IconPhoto, IconToolsKitchen2, IconDesk, IconPool, IconBrandCarbon, IconSailboat, IconWifi, IconParking, IconAlarmSmoke, IconDog } from "@/assets/icons"
+import { Accommodations } from "@/types/AirbnbData"
 
-const AccommodationDetails = () => {
+interface AccommodationDetailsProps {
+    accommodation: Accommodations
+}
+
+const AccommodationDetails = (
+    props: AccommodationDetailsProps
+) => {
+    const accommodation = props.accommodation
     return (
         <div className="w-full py-4">
-            <h2 className="text-xl font-semibold">Espaço inteiro: casa de campo em Minas Gerais</h2>
+            <h2 className="text-xl font-semibold">{accommodation.location.description}</h2>
             <ul className="flex flex-row gap-2">
                 <li>10 Hóspedes</li>
                 <li>&middot;</li>
@@ -34,7 +42,7 @@ const AccommodationDetails = () => {
                 </li>
                 <li className="flex gap-1.5">
                     <IconBrandCarbon />
-                    <span>Alarme de segurança p/ gás</span>
+                    <span className="line-through">Alarme de segurança p/ gás</span>
                 </li>
                 <li className="flex gap-1.5">
                     <IconSailboat />
@@ -54,7 +62,7 @@ const AccommodationDetails = () => {
                 </li>
                 <li className="flex gap-1.5">
                     <IconAlarmSmoke />
-                    <span>Detector de fumaça</span>
+                    <span className="line-through">Detector de fumaça</span>
                 </li>
             </ul>
             
